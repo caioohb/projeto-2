@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161A1E;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+    background-color: rgb(241, 193, 34);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    color: #000000;
+    letter-spacing: 5px;
+    text-transform: lowercase;
+    font-size: xx-large;
+}
+
+.logo span:first-child{
+    color: white;  
+    font-size:medium;  
+}
+
+/*.logo span:last-child{
+    font-size: 15px;
+    letter-spacing: 1px;
+}*/
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+    z-index: 9999;
+}
+
+.menu li a{
+    padding: 17px;
+    color: white;
+    font-size: 14pxx;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li:hover{
+    background: black;
+}
+
+.menu li:hover > .submenu,
+.submenu li:hover > .submenu{
+    display: block;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    top: 50px;
+    left: 0px;
+    min-width: 95%;
+    background-color: rgb(241, 193, 34);
+}
+
+.submenu li:hover{
+    background-color:rgb(43, 40, 32);
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0;
+    left: 100%;
+}
+
+main{    
+    height: 700px;
+    width: 100%;
+    padding: 10px;
+}
+
+.conteudo{
+    width: 100%;
+    padding: 10px;
+}
+
+.titulo{
+    width: 100%;
+    color: #ffffff;
+    padding-bottom: 20px;
+    font-family:'Nunito', sans-serif;
+    font-size:xx-large;
+    letter-spacing: 3px;
+}
+
+h3{
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+.main{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.cidade {
+    display: block; 
+    width: 100%; 
+    height: 400px; 
+    box-shadow: black;
+  }
+  
+  .texto {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    padding-top: 100px ;
+    padding-bottom: 30px;
+  }
+
+
+.tela{
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 30px;
+    height: 400px;
+    box-shadow: 1px 1px 1px 1px peru, -2px -2px 4px white;;
+}
+
+.imagem{
+    width: 60px;
+    padding-right: 20px;
+}
+
+.criptos{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    height: 360px;
+}
+
+.subcriptos{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color: rgb(168, 141, 82);
+    border: 4px solid rgb(204, 151, 4);
+    
+    height: 360px;
+    width: 300px;
+    color: white;
+    font-size: large;
+}
+
+.moeda{
+    text-decoration: none;
+    list-style: none;
+    color:#ffffff;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.paragrafo{
+    padding-top: 18px;
+    text-align:inherit;
+    color: #000000;
+    font-size:16px;
+}
+
+.parte3{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.botao{
+    text-decoration: none;
+    display: inline-block; 
+    padding: 10px 30px;    
+    color: gold;   
+    background-color: transparent; 
+    border: 2px solid gold;    
+    font-size: 2rem;   
+    text-transform: uppercase; 
+    letter-spacing: .1rem; 
+    transition: .5s ease;  
+    transition-property: background-color, color;  
+}
+
+.botao:hover{
+    color: white;
+    font-weight: 500;
+    background-color: gold;
+}
+
+footer{
+    height: 50px;
+    background-color:  rgb(241, 193, 34);
+    color: black;
+    text-align: center;
+}
+
+.footer{
+    padding: 12px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
